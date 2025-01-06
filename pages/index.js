@@ -3,6 +3,9 @@ import Features from "../components/Features";
 import Statistics from "../components/Statistics";
 import About from "../components/About";
 import Footer from "../components/Footer";
+import BusinessCommunication from "../components/BusinessCommunication";
+import CompleteSolution from "../components/CompleteSolution";
+import CommunicationStack from "../components/CommunicationStack";
 
 export default function Home() {
   return (
@@ -10,7 +13,9 @@ export default function Home() {
       <Hero />
       <Features />
       <Statistics />
-      <About />
+      <BusinessCommunication />
+      <CompleteSolution />
+      <CommunicationStack />
       <Footer />
     </div>
   );
