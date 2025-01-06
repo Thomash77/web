@@ -4,7 +4,7 @@ const Footer = () => {
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
           {/* Branding */}
           <div className="text-center md:text-left mb-4 md:mb-0">
-            <h2 className="text-2xl font-bold">Dynamic AI</h2>
+            <h2 className="text-2xl font-bold">Cortex AI</h2>
             <p className="text-sm">Empowering businesses with AI-driven solutions.</p>
           </div>
   
@@ -23,7 +23,7 @@ const Footer = () => {
   
           {/* Contact Details */}
           <div className="text-center md:text-right">
-            <p>Email: <a href="mailto:info@dynamic-ai.com" className="hover:underline">info@dynamic-ai.com</a></p>
+            <p>Email: <a href="mailto:info@dynamic-ai.com" className="hover:underline">info@cortexai.com</a></p>
             <p>Phone: <a href="tel:+123456789" className="hover:underline">+1 234 567 89</a></p>
           </div>
         </div>
