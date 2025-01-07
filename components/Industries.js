@@ -1,11 +1,14 @@
+import ScrollAnimation from "./ScrollAnimation";
+
 const Industries = () => {
-    const industries = [
-      { title: "Healthcare", description: "Revolutionizing patient care with AI-driven insights." },
-      { title: "Finance", description: "Optimizing risk analysis and fraud detection." },
-      { title: "Retail", description: "Enhancing customer experiences with personalization." },
-    ];
-  
-    return (
+  const industries = [
+    { title: "Healthcare", description: "Revolutionizing patient care with AI-driven insights." },
+    { title: "Finance", description: "Optimizing risk analysis and fraud detection." },
+    { title: "Retail", description: "Enhancing customer experiences with personalization." },
+  ];
+
+  return (
+    <ScrollAnimation initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
       <div className="py-20 bg-blue-600 text-white">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">Industries We Serve</h2>
@@ -19,7 +22,8 @@ const Industries = () => {
           </div>
         </div>
       </div>
-    );
-  };
-  
-  export default Industries;
+    </ScrollAnimation>
+  );
+};
+
+export default Industries;

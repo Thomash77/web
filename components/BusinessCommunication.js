@@ -1,5 +1,8 @@
+import ScrollAnimation from "./ScrollAnimation";
+
 const BusinessCommunication = () => {
-    return (
+  return (
+    <ScrollAnimation>
       <div className="py-20 bg-gray-100">
         <div className="container mx-auto flex flex-col md:flex-row items-center">
           {/* Left: Text Content */}
@@ -17,7 +20,7 @@ const BusinessCommunication = () => {
               Learn More
             </a>
           </div>
-  
+
           {/* Right: Visual Content */}
           <div className="md:w-1/2 mt-10 md:mt-0 px-6">
             <img
@@ -28,7 +31,8 @@ const BusinessCommunication = () => {
           </div>
         </div>
       </div>
-    );
-  };
-  
-  export default BusinessCommunication;
+    </ScrollAnimation>
+  );
+};
+
+export default BusinessCommunication;
