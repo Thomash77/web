@@ -1,4 +1,4 @@
-import ScrollAnimation from "./ScrollAnimation";
+import { Parallax } from "react-parallax";
 
 const Industries = () => {
   const industries = [
@@ -8,8 +8,8 @@ const Industries = () => {
   ];
 
   return (
-    <ScrollAnimation initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
-      <div className="py-20 bg-blue-600 text-white">
+    <Parallax bgImage="/industries-bg.jpg" strength={200}>
+      <div className="py-20 text-white">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">Industries We Serve</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -22,7 +22,7 @@ const Industries = () => {
           </div>
         </div>
       </div>
-    </ScrollAnimation>
+    </Parallax>
   );
 };
 

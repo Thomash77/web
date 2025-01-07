@@ -1,8 +1,8 @@
-import ScrollAnimation from "./ScrollAnimation";
+import { Parallax } from "react-parallax";
 
 const BusinessCommunication = () => {
   return (
-    <ScrollAnimation>
+    <Parallax bgImage="/business-communication-bg.jpg" strength={300}>
       <div className="py-20 bg-gray-100">
         <div className="container mx-auto flex flex-col md:flex-row items-center">
           {/* Left: Text Content */}
@@ -31,7 +31,7 @@ const BusinessCommunication = () => {
           </div>
         </div>
       </div>
-    </ScrollAnimation>
+    </Parallax>
   );
 };
 
