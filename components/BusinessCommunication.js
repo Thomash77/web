@@ -1,8 +1,16 @@
 import { Parallax } from "react-parallax";
+import { useMediaQuery } from "react-responsive";
 
 const BusinessCommunication = () => {
+  // Dynamic parallax strength based on screen size
+  const isDesktop = useMediaQuery({ query: "(min-width: 1024px)" });
+  const isTablet = useMediaQuery({ query: "(min-width: 768px) and (max-width: 1023px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
+
+  const parallaxStrength = isDesktop ? 300 : isTablet ? 150 : 50;
+
   return (
-    <Parallax bgImage="/business-communication-bg.jpg" strength={300}>
+    <Parallax bgImage="/business-communication-bg.jpg" strength={parallaxStrength}>
       <div className="py-20 bg-gray-100">
         <div className="container mx-auto flex flex-col md:flex-row items-center">
           {/* Left: Text Content */}

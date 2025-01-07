@@ -1,6 +1,13 @@
 import { Parallax } from "react-parallax";
+import { useMediaQuery } from "react-responsive";
 
 const Industries = () => {
+  const isDesktop = useMediaQuery({ query: "(min-width: 1024px)" });
+  const isTablet = useMediaQuery({ query: "(min-width: 768px) and (max-width: 1023px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
+
+  const parallaxStrength = isDesktop ? 250 : isTablet ? 120 : 40;
+
   const industries = [
     { title: "Healthcare", description: "Revolutionizing patient care with AI-driven insights." },
     { title: "Finance", description: "Optimizing risk analysis and fraud detection." },
@@ -8,7 +15,7 @@ const Industries = () => {
   ];
 
   return (
-    <Parallax bgImage="/industries-bg.jpg" strength={200}>
+    <Parallax bgImage="/industries-bg.jpg" strength={parallaxStrength}>
       <div className="py-20 text-white">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">Industries We Serve</h2>
