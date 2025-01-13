@@ -1,39 +1,44 @@
+import ScrollAnimation from "./ScrollAnimation";
+
 const Hero = () => {
-    return (
-      <div
-        className="relative h-screen flex items-center justify-center bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/cortex-bg.jpg')",
-        }}
-      >
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
-  
-        {/* Content */}
-        <div className="relative text-center text-white px-6">
-          <h1 className="text-5xl font-bold mb-4">
-            Empower Your Business with AI
+  return (
+    <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: "url('/hero-bg.jpg')" }}>
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/60"></div>
+
+      {/* Content */}
+      <div className="relative h-full flex flex-col justify-center items-center text-center text-white px-6">
+        <ScrollAnimation direction="up">
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-4">
+            Join the AI-Powered Advertising Era
           </h1>
-          <p className="text-xl mb-6">
-            Discover cutting-edge solutions designed to transform your operations and drive growth.
+        </ScrollAnimation>
+
+        <ScrollAnimation direction="up" delay={0.2}>
+          <p className="text-lg md:text-2xl mb-8">
+            Transform your campaigns with real-time AI insights and automation for unmatched ROI.
           </p>
+        </ScrollAnimation>
+
+        <ScrollAnimation direction="up" delay={0.4}>
           <div className="space-x-4">
             <a
-              href="#learn-more"
-              className="bg-white text-blue-600 font-semibold px-8 py-3 rounded-lg hover:bg-gray-200 transition"
+              href="#features"
+              className="bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-700 transition"
             >
-              Learn More
+              Get Started
             </a>
             <a
               href="#contact"
               className="bg-transparent border border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-blue-600 transition"
             >
-              Contact Us
+              Learn More
             </a>
           </div>
-        </div>
+        </ScrollAnimation>
       </div>
-    );
-  };
-  
-  export default Hero;
+    </div>
+  );
+};
+
+export default Hero;
