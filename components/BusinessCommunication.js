@@ -15,11 +15,9 @@ const BusinessCommunication = () => {
         <div className="container mx-auto flex flex-col md:flex-row items-center">
           {/* Left: Text Content */}
           <div className="md:w-1/2 text-center md:text-left px-6">
-            <h2 className="text-3xl font-bold mb-4">Empowering Business Communication</h2>
+            <h2 className="text-3xl font-bold mb-4">Empowering Mobile Advertisers with Real-Time AI</h2>
             <p className="text-lg text-gray-700 mb-6">
-              Revolutionize your communication channels with AI. Our solutions 
-              enable seamless collaboration, automate routine tasks, and deliver 
-              unparalleled efficiency.
+              Enhance your mobile advertising strategies with cutting-edge AI solutions. Our platform provides real-time insights and automation, allowing advertisers to optimize campaigns, increase engagement, and achieve better ROI. Experience the future of mobile advertising with our advanced AI technology.
             </p>
             <a
               href="#contact"
@@ -33,7 +31,7 @@ const BusinessCommunication = () => {
           <div className="md:w-1/2 mt-10 md:mt-0 px-6">
             <img
               src="/business-communication.jpg"
-              alt="Empowering Business Communication"
+              alt="Empowering Mobile Advertisers with Real-Time AI"
               className="rounded-lg shadow-lg"
             />
           </div>
