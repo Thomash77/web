@@ -1,9 +1,9 @@
 import Hero from "../components/Hero";
 import OurTechnologies from "../components/OurTechnologies";
+import Statistics from "../components/Statistics"; // Moved right after Our Technologies
 import Features from "../components/Features";
-import Statistics from "../components/Statistics";
 import BusinessCommunication from "../components/BusinessCommunication";
-import CommunicationStack from "../components/CommunicationStack";  // Moved here
+import CommunicationStack from "../components/CommunicationStack";
 import CompleteSolution from "../components/CompleteSolution";
 import BusinessModel from "../components/BusinessModel";
 import Industries from "../components/Industries";
@@ -14,10 +14,10 @@ export default function Home() {
     <div>
       <Hero />
       <OurTechnologies />
+      <Statistics />  {/* Now appears right after Our Technologies */}
       <Features />
-      <Statistics />
       <BusinessCommunication />
-      <CommunicationStack />  {/* Now appears after Business Communication */}
+      <CommunicationStack />
       <CompleteSolution />
       <BusinessModel />
       <Industries />
